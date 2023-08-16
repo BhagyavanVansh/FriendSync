@@ -1,0 +1,30 @@
+.feed {
+  // height: calc(100vh - 60px);
+  // overflow-y: hidden;
+
+  .container {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+    }
+  }
+
+  .left-part {
+    flex: 2;
+    overflow-y: auto;
+  }
+  .right-part {
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .suggestions {
+    margin-top: 40px;
+  }
+
+  .title {
+    margin-bottom: 12px;
+  }
+}
